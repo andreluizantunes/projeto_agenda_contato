@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" > <!--link do Font Awesome-->
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+
+    <h1><i class="fas fa-address-book"></i> Agenda de Contatos </h1>
+
+    <div class="container">
+        <form id="formulario-contato">
+            <label for="nome"><i class="fas fa-user icon"></i> Nome: </label>
+            <input type="text" id="nome" placeholder="Digite o nome" required>
+
+            <label for="telefone"><i class="fas fa-phone-alt icon"></i> Telefone: </label>
+            <input type="text" id="telefone" placeholder="Digite o telefone" required>
+
+            <button type="submit"><i class="fas fa-plus icon"></i> Cadastrar </button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th><i class="fas colorw fa-user"></i> Nome </th>
+                    <th><i class="fas colorw fa-phone-alt"></i> Telefone </th>
+                </tr>
+            </thead>
+            <tbody id="contatos-body">
+                <!-- Os contatos serão adicionados aqui  -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
